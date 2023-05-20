@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+    <h1>{{ title }}</h1>
+    <div class="form-group">
+        <label for="documento">Documento:</label>
+        <input type="text" id="documento" v-model="documento">
+    </div>
+    <div class="form-group">
+        <label for="producto">Nombre del producto:</label>
+        <input type="text" id="producto" v-model="producto">
+    </div>
+    <div class="form-group">
+        <label for="total">Total:</label>
+        <input type="text" id="total" v-model="total">
+    </div>
+    <div class="form-group">
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" v-model="direccion">
+    </div>
+    <button @click="guardarDatos">Guardar</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            title: 'Tienda Virtual',
+            documento: '',
+            producto: '',
+            total: '',
+            direccion: '',
+        },
+        methods: {
+            guardarDatos() {
+                const datos = {
+                    documento: this.documento,
+                    producto: this.producto,
+                    total: this.total,
+                    direccion: this.direccion,
+                };
+
+                // Convertir los datos a formato JSON y mostrarlos en la consola
+                console.log(JSON.stringify(datos));
+            },
+        },
+    });
+</script>
+</body>
+</html>
