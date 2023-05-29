@@ -2,7 +2,7 @@ Vue.component('header-component', {
     template: `
     <header class="header-component">
         <div class="logo-container">
-            <img class="logo-image" src="images/logo.png" alt="Logo">
+            <img class="logo-image" src="images/logo1.png" alt="Logo">
         </div>
         <h1 class="title">Tienda Virtual</h1>
     </header>
