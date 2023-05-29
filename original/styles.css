@@ -1,0 +1,127 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2F6F8;
+}
+
+/* Estilos del encabezado */
+.header-component {
+    background-color: #00A7E1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-container {
+    width: 20%;
+}
+
+.logo-image {
+    max-width: 40%;
+    height: auto;
+}
+
+.title {
+    font-size: 80px;
+    color: #FFFF;
+    text-align: left;
+    flex-grow: 1;
+    margin: 0;
+}
+
+/* Estilos del menú */
+.menu-component {
+    background-color: #006E9E;
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-bar li {
+    margin: 0 10px;
+}
+
+.menu-bar a {
+    display: block;
+    text-decoration: wavy;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+/* Estilos del contenido */
+.content-section {
+    background-color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-title {
+    font-size: 40px;
+    color: #004168;
+    margin-bottom: 25px;
+    font-style: initial;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: #004168;
+}
+
+.form-group input {
+    padding: 8px;
+    border: 1px solid #CCCCCC;
+    border-radius: 9px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-group .button-container {
+    margin: 0 5px;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    background-color: #00A7E1;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-group button:hover {
+    background-color: #0092BF;
+}
+
+/* Estilos del pie de página */
+.footer-component {
+    background-color: #006E9E;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-component p {
+    margin: 0;
+}
